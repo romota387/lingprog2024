@@ -43,7 +43,7 @@ void q1() {
                             float n;
                             printf("digite o numero :");
                             scanf("%f",&n);
-                            printf("antecessor: %f e sucessor: %f",n-1, n+1);                      
+                            printf("antecessor: %f e sucessor: %f\n",n-1, n+1);                      
                     }
 
                             //7. Faça um programa que leia o nome o endereço e o telefone de
@@ -51,38 +51,115 @@ void q1() {
                             void q7(){
                                 char nome[50], endereco[50], telefone[14];
 
-                                printf("nome:");
-                                scanf(" %50[^\n]",nome);
+                                printf("digite seu nome:");
+                                scanf("%s\n",nome);
 
-                                print("endereco:");
-                                scanf(" %50[^\n]",endereco);
+                                printf("digite seu endereco:");
+                                scanf("%s\n",endereco);
 
-                                prinft("telefone:");
-                                scanf(" %14[^\n]",telefone);
+                                printf("digite seu telefone:");
+                                scanf(" %s\n",telefone);
 
-                                prinft("%s\n%\n%s\n",nome, endereco, telefone);
+                                printf("%s\n%s\n%s\n",nome, endereco, telefone);
                             }
 
-//8. Faça um programa que leia dois números inteiros e imprima a
-//   subtração deles.
+                                //8. Faça um programa que leia dois números inteiros e imprima
+                                //   subtração deles.   
+                                void q8(){
+                                int n1,n2;
+                                char subtracao;
 
-//9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
+                                printf("digite numero 1:");
+                                scanf("%d\n",&n1);
 
-//10. Faça um programa que leia três números reais e calcule a
-//    média aritmética destes números. Ao final, o programa deve
-//    imprimir o resultado do cálculo.
+                                printf("digite seu numero 2:");
+                                scanf("%d\n",&n2);
+                                subtracao = n1-n2;
 
-//11. Faça um programa que leia dois números reais e calcule as
-//    quatro operações básicas entre estes dois números, adição,
-//    subtração,multiplicação e divisão. Ao final, o programa
-//    deve imprimir os resultados dos cálculos.
+                                printf("digite o resultado: %d", subtracao);
+                                }
 
-//12. Faça um programa que leia um número real e calcule o
-//    quadrado deste número. Ao final, o programa deve
-//    imprimir o resultado do cálculo.
 
-//13. Faça um programa que leia o saldo de uma conta poupança e
-//    imprima o novo saldo, considerando um reajuste de 2%.
+                                    //9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
+                                    void q9(){
+                                    int n1;
+                                    float resultado;
+
+                                    printf("digite numero 1:");
+                                    scanf("%f",&n1);
+
+                                    resultado = n1 / 4;
+
+                                    printf("digite o resultado: %f\n", resultado);
+                                    }
+
+                                        //10. Faça um programa que leia três números reais e calcule a
+                                        //    média aritmética destes números. Ao final, o programa deve
+                                        //    imprimir o resultado do cálculo.
+                                        void q10(){
+                                        float n1,n2,n3,media;
+
+                                        printf("digite numero 1:");
+                                        scanf("%f",&n1);
+
+                                        printf("digite numero 2:");
+                                        scanf("%f",&n2);
+
+                                        printf("digite numero 3:");
+                                        scanf("%f",&n3);
+
+                                        media = n1+n2+n3 / 3;
+
+                                        printf("digite o resultado: %f\n", media);
+                                        }
+
+                                            //11. Faça um programa que leia dois números reais e calcule as
+                                            //    quatro operações básicas entre estes dois números, adição,
+                                            //    subtração,multiplicação e divisão. Ao final, o programa
+                                            //    deve imprimir os resultados dos cálculos.
+                                            void q11(){
+                                            float n1,n2,resultado;
+
+                                            printf("digite numero 1:");
+                                            scanf("%f",&n1);
+
+                                            printf("digite numero 2:");
+                                            scanf("%f",&n2);
+
+                                            resultado = n1+n2;
+
+                                            printf("resultado da soma e:%f\n", resultado);
+                                            resultado = n1-n2;
+
+                                            printf("resultado da subtracao e:%f\n", resultado);                                        
+                                            resultado = n1*n2;
+
+                                            printf("resultado da multiplicacao e:%f\n", resultado);
+                                            resultado = n1/n2;
+
+                                            printf("resultado da divisao e:%f\n", resultado);
+                                        
+                                            }
+
+                                            //12. Faça um programa que leia um número real e calcule o
+                                            //    quadrado deste número. Ao final, o programa deve
+                                            //    imprimir o resultado do cálculo.
+                                            void q12(){
+                                            float saldo,novo saldo;
+
+                                            printf("digite numero 1:");
+                                            scanf("%f",&n1);
+
+                                            resultado = n1*n1;
+
+                                            printf("resultado do quadrado e:%f\n", resultado);
+                                            
+                                            }
+
+                                                //13. Faça um programa que leia o saldo de uma conta poupança e
+                                                //    imprima o novo saldo, considerando um reajuste de 2%.
+
+
 
 //14. Faça um programa que leia a base e a altura de um retângulo
 //    e imprima o perímetro (base*2 + altura*2) e a área (base * altura).
@@ -129,13 +206,18 @@ void q1() {
 
 
 int main() {
-    q1();
-    q2();
-    q3();
-    q4();
-    q5();
-    q6();
-    q7();
+//    q1();
+//    q2();
+//    q3();
+//    q4();
+//    q5();
+//    q6();
+//    q7();
+//    q8();
+//    q9();
+//    q10();
+//    q11();
+q12();
     return EXIT_SUCCESS;
 }
 
