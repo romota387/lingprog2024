@@ -186,13 +186,42 @@ void questao09() {
 		
 	printf (" data de nascimento invalida:" );
 	 }
-  
 	
 }
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
 //crescente.
 void questao10() {
+		int num1,num2,num3;
+	printf("Digite o numero 1: ");
+	scanf("%d", &num1);
+	printf("Digite o numero 2: ");
+	scanf("%d", &num2);
+	printf("Digite o numero 3: ");
+	scanf("%d", &num3);
+	
+	if(	num1 < num2 && num1 < num3  ){
+		if (num2 < num3)
+		printf("%d, %d, %d", num1, num2,num3);
+	}
+	else
+	printf (" %d, %d, %d", num1, num3, num2 );
+	 }
+	else if (num2 < num1 && num2 < num3){
+	if (num1 < num3)
+	printf("%d, %d, %d", num2, num1, num3);
+	else
+	printf("%d, %d, %d", num2, num3, num1)
+	}
+	else{
+		if( num2 < num1)
+		printf("%d, %d, %d", num3, num2, num1);
+		else
+		printf("%d, %d, %d", num3, num1, num2);
+	
+	
+	
+}
 
 }
 
@@ -352,6 +381,9 @@ int main() {
 			break;								
 		case 10:
 			questao10();
+			break;
+		case 11:
+			questao11();
 			break;
 		default:
 			printf("Opção inválida!");
