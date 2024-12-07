@@ -134,18 +134,59 @@ void questao06() {
 //entre 20 e 50 ou não.
 void questao07() {
 
+	 int num;
+	printf("Digite um numero: ");
+	scanf("%d", &num);
+	
+	if(	num >= 20 && num <= 50)
+	{
+    printf("numero entre 20 e 50:" );
+	}
+	else {
+	printf ("numero menor que 20:" );
+	 }
+
 }
 
 //8. Faça um programa que leia um número e imprima uma das mensagens: 
 //"Maior do que 20", "Igual a 20"ou "Menor do que 20".
 void questao08() {
+	 int num;
+	printf("Digite um numero: ");
+	scanf("%d", &num);
 	
+	if(	num < 20 )
+	{
+    printf("numero menor 20:" );
+	}
+	else
+	{
+		if ( num = 20){
+	
+	printf ("numero igual ou maior 20:" );
+	 }
+  }
 }
-
 //9. Faça um programa que permita entrar com o ano de nascimento da pessoa e como ano
 //atual. O programa deve imprimir a idade da pessoa. Não se esqueça de verificar se o
 //ano de nascimento informado é válido.
 void questao09() {
+	int nascimento, anoatual;
+	printf("Digite o ano de nascimento: ");
+	scanf("%d", &nascimento);
+	printf("Digite o ano atual: ");
+	scanf("%d", &anoatual);
+	
+	if(	nascimento > 0 && nascimento <= anoatual  )
+	{
+    printf("sua idade e:%d ", anoatual - nascimento );
+	}
+	else
+	{
+		
+	printf (" data de nascimento invalida:" );
+	 }
+  
 	
 }
 
@@ -302,7 +343,13 @@ int main() {
 			break;	
 		 case 7:
 			questao07();
-			break;						
+			break;
+		case 8:
+			questao08();
+			break;	
+		case 9:
+			questao09();
+			break;								
 		case 10:
 			questao10();
 			break;
