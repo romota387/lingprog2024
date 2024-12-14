@@ -44,6 +44,12 @@ void exemploPrimeiroMilhao() {
 }
 
 //1.Faça um programa que imprima todos os números de 1 até 100.
+void exemploNumeroOrdemCrescente(){
+	for (int cont = 0; cont <= 100; cont++) {
+		printf("Olá pela %d vez\n", cont);
+	}
+}
+
 
 //2. Faça um programa que imprima todos os números pares de 100 até 1.
 
@@ -296,6 +302,6 @@ void exemploPrimeiroMilhao() {
 //idade.
 
 int main() {
-    exemploPrimeiroMilhao();
+    exemploNumeroOrdemCrescente();
 	return EXIT_SUCCESS;
 }
